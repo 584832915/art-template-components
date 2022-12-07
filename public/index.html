@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>云播观众端SDK</title>
+</head>
+
+<body>
+    <h1>云播观众端SDK - demo示例</h1>
+    <div class="demo-tab">
+        <span id="demo-tab-pc" class="demo-tab-choose" onclick="changeTab('pc')">PC端</span>
+        <span id="demo-tab-mobile" onclick="changeTab('mobile')">移动端</span>
+    </div>
+    <div class="live-room">
+        <!-------------------------------- PC端 -------------------------------->
+        <div id="demo-pc-content">
+            <div class="demo-pc-left">
+                <div class="demo-pc-top">
+                    <!-- 公告 -->
+                    <div id="sdk-notice-pc" class="demo-notice"></div>
+                    <!-- 播放器 -->
+                    <div id="sdk-player-pc" class="demo-player"></div>
+                </div>
+                <!-- 工具类 -->
+                <div id="sdk-tool-pc" class="demo-tool">
+                    <div id="sdk-modal-alert"></div>
+                    <div id="sdk-prize"></div>
+                </div>
+
+            </div>
+            <div class="demo-pc-right">
+                <!-- 引导页 -->
+                <div id="before-login-page-pc"></div>
+                <!-- 文档白板 - 有-->
+                <div id="sdk-documentWhiteboard-pc" class="demo-documentWhiteboard"></div>
+                <!-- 文档白板 - 无-->
+                <div class="demo-documentWhiteboard doc-position">
+                    <div class="no-doc-area">
+
+                        <p class="demo-documentWhiteboard-no-flieText">暂无共享内容</p>
+                    </div>
+                </div>
+                <!-- 聊天 -->
+                <div id="sdk-chat-pc" class="demo-chat">
+                    聊天
+                </div>
+            </div>
+        </div>
+        <!-------------------------------- 移动端 -------------------------------->
+        <div id="demo-mobile-content">
+            <div class="demo-pc-left">
+                <!-- 播放器 -->
+                <div id="sdk-player-mobile" class="demo-documentWhiteboard">
+                    播放器
+                </div>
+                <!-- 聊天 -->
+                <div id="sdk-chat-mobile" class="demo-chat">
+                    聊天
+                </div>
+            </div>
+            <div class="demo-pc-right demo-mobile-right">
+                <!-- 文档白板 -->
+                <div id="sdk-documentWhiteboard-mobile" class="demo-documentWhiteboard">
+                    文档白板
+                </div>
+                <!-- 工具类 -->
+                <div id="sdk-tool-mobile" class="demo-chat">
+                    其他工具类
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-404">
+        <p class="page-fail-text"></p>
+    </div>
+    <!-- 登录 -->
+    <div id="sdk-login-pc"></div>
+    <script src="static/js/demo.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+    <script>
+        // 签到
+        const c = new webSdkComponent.SingIn({
+            container: "#sdk-modal-alert",
+        });
+        const prize = new webSdkComponent.PrizeDraw({
+            container: "#sdk-prize",
+        });
+        // 公告
+        const notice = new webSdkComponent.Notice({
+            container: "#sdk-notice-pc",
+        });
+        // // 播放器
+        const play = new webSdkComponent.Player({
+            container: "#sdk-player-pc",
+        });
+        // 引导页
+        const sdkBeforLoginPc = new webSdkComponent.BeforeLogin({
+            container: "#before-login-page-pc",
+        });
+        // 登录
+        const sdkLoginPc = new webSdkComponent.Login({
+            container: "#sdk-login-pc",
+        });
+    </script>
+</body>
+
+</html>

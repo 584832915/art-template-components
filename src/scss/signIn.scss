@@ -1,0 +1,42 @@
+.signInModal .modal-content{
+    background-color: unset;
+    border: unset;
+}
+.signInContent{
+    position: relative;
+    .title,.tip,.countdownTime{
+        position: absolute;
+        width: 322px;
+        left: 90px;
+        text-align: center;
+    }   
+    .title{
+        top: 300px;
+        color: #333333;
+        font-size: 18px;
+    }
+    .tip{
+        top: 350px;
+        color: #999999;
+        font-size: 18px;
+    }
+    .countdownTime{
+        position: absolute;
+        top: 380px;
+        color: #FA4100;
+        font-size: 50px;
+    }
+    .signInBtn{
+        position: absolute;
+        bottom: 33px;
+        left: 185px;
+        background-color: #FA4100;
+        width: 148px;
+        height: 58px;
+        line-height: 58px;
+        color: white;
+        text-align: center;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+}

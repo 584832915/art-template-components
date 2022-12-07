@@ -1,0 +1,90 @@
+.dialog-logout {
+    width: 445px;
+    height: 310px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+}
+.dialog-logout-header {
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    background: #3986EE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+.dialog-logout-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 25px;
+    text-align: center;
+    margin: 70px 0 55px;
+}
+.dialog-logout-cancel {
+    margin: 0 30px 40px 82px;
+    border: 1px solid #2081eb;
+    width: 124px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #3986ee;
+    border-color: #3986ee;
+    background-color: #fff;
+}
+.dialog-logout-sure {
+    background: #2081eb;
+    color: #fff;
+    border: 1px solid #2081eb;
+    width: 124px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.message-success {
+    display: none;
+    top: 35px;
+    z-index: 2028;
+    min-width: 300px;
+    padding: 12px 19px;
+    width: fit-content;
+    max-width: calc(100% - 32px);
+    box-sizing: border-box;
+    border-radius: 4px;
+    border:  1px solid #e1f3d8;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f9eb;
+    transition: opacity 0.3s,transform .4s,top .4s;
+    align-items: center;
+    font-size: 14px;
+    color: #67c23a;
+}
+.message-success img {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+}
+.message-success p {
+    height: 22px;
+    line-height: 22px;
+}

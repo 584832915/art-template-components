@@ -1,0 +1,97 @@
+@import './demo';
+@import './player';
+@import './beforelogin';
+@import './notice';
+@import './login';
+@import './logout';
+@import "./signIn.scss";
+@import "./alert.scss";
+@import './webplayer';
+@import './prizeDraw.scss';
+
+
+// @import "~bootstrap/scss/mixins/banner";
+// @include bsBanner("");
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/utilities";
+
+
+$input-focus-box-shadow: none;
+$form-select-focus-box-shadow: none;
+$form-check-input-focus-box-shadow: none;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/containers";
+// @import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/tables";
+// @import "~bootstrap/scss/forms";
+// @import "~bootstrap/scss/transitions";
+// @import "~bootstrap/scss/dropdown";
+// @import "~bootstrap/scss/button-group";
+// @import "~bootstrap/scss/nav";
+// @import "~bootstrap/scss/navbar";
+// @import "~bootstrap/scss/card";
+// @import "~bootstrap/scss/accordion";
+// @import "~bootstrap/scss/breadcrumb";
+// @import "~bootstrap/scss/pagination";
+// @import "~bootstrap/scss/badge";
+// @import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/progress";
+// @import "~bootstrap/scss/list-group";
+// @import "~bootstrap/scss/toasts";
+// @import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/carousel";
+// @import "~bootstrap/scss/spinners";
+// @import "~bootstrap/scss/offcanvas";
+// @import "~bootstrap/scss/placeholders";
+
+// 去除按钮的 box-shadow [此方式对按钮有效]
+@each $color, $value in $theme-colors {
+  .btn-#{$color}:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-#{$color}:active:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-#{$color}.active:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-outline-#{$color}:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-outline-#{$color}:active:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-outline-#{$color}.active:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-check:checked + .btn-outline-#{$color}.active:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-check:checked + .btn-outline-#{$color}:active:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-check:checked + .btn-outline-#{$color}:focus {
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-check:focus + .btn-outline-#{$color}{
+    box-shadow: $btn-focus-box-shadow;
+  }
+  .btn-check:active + .btn-outline-#{$color}{
+    box-shadow: $btn-focus-box-shadow;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="showPrize demo-tab-choose" id="demo-tab-mobile">show抽奖</div>
+<div class="prizeModelWrapper">
+    <div class="modal fade prizeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content prizeContent">
+                <img class="prizeStart" src="../imgs/draw.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>

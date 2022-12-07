@@ -1,0 +1,21 @@
+<div class="dialog-mask">
+    <div class="dialog-login">
+        <div class="dialog-login-header">
+            密码验证
+        </div>
+        <div class="dialog-login-body">
+            <label>密码</label>
+            <div class="dialog-login-body-input-suffix">
+                <input type="password" autocomplete="off" placeholder="请输入密码" class="dialog-login-input">
+                <div class="icon-view">
+                    <img src="../imgs/icon_view.png" />
+                </div>
+            </div>
+            <button class="dialog-login-btn">进入直播</button>
+        </div>
+    </div>
+</div>
+<div class="message-success">
+    <img src="../imgs/message-success.svg" />
+    <p>登录成功</p>
+</div>

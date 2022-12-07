@@ -1,0 +1,7 @@
+<div class="notice-bar">
+    <img class="icon-notice" src="../imgs/ico_notice.png" />
+    <div class="notice-bar__wrapper">
+        <div class="notice-bar__content notice-bar-play-infinite">{{title}}</div>
+    </div>
+    <img class="icon-close" src="../imgs/ico_close.svg" />
+</div>

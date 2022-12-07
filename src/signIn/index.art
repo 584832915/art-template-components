@@ -1,0 +1,14 @@
+<div class="signInAlertWrapper"></div>
+<p class="showSignIn demo-tab-choose" id="demo-tab-mobile">show签到弹窗</p>
+<div class="modal fade signInModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content signInContent">
+            <img src="./../imgs/signIn.png" alt="">
+            <p class="title">请签到</p>
+            <p class="tip">请在以下时间内完成</p>
+            <p class="countdownTime"><span class="time"></span>0 <span>s</span></p>
+            <p class="signInBtn">签到</p>
+        </div>
+    </div>
+</div>

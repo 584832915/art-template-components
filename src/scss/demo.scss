@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 标题和选项卡 */
+h1 {
+    margin-top: 35px;
+    text-align: center;
+}
+.demo-tab {
+    margin: auto;
+    width: 1365px;
+    border-radius: 4px;
+    font-size: 0;    
+}
+.demo-pc-top {
+    position: relative;
+}
+#sdk-notice-pc {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+#demo-tab-pc, #demo-tab-mobile {
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #DEDFE6;
+}
+#demo-tab-pc {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#demo-tab-mobile {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.demo-tab-choose {
+    background-color: #2081EB;
+    color: #FFF;
+    border: 1px solid #2081EB;
+}
+/* 主体内容 */
+#demo-pc-content, #demo-mobile-content {
+    margin: 20px auto;
+}
+#demo-pc-content {
+    width: 1365px;
+    height: 742px;
+}
+#demo-mobile-content {
+    display: none;
+    width: 830px;
+    height: 742px;
+}
+.demo-pc-left, .demo-pc-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.demo-pc-right {
+    margin-left: 4px;
+}
+/* 布局 */
+.demo-player {
+    width: 966px;
+    height: 642px;
+    background-color: antiquewhite;
+}
+.demo-tool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 966px;
+    height: 100px;
+    border: 1px solid #2081EB;
+    box-sizing: border-box;
+}
+.logout-pc {
+    height: 38px;
+}
+.demo-documentWhiteboard {
+    width: 390px;
+    height: 220px;
+}
+.doc-position {
+    display: none;
+    position: absolute;
+    top: 116px;
+    z-index: 0;
+}
+.no-doc-area {
+    width: 390px;
+    height: 220px;
+    background-color: #1f2430;
+    text-align: center;
+}
+.demo-documentWhiteboard-no-flie {
+    width: 120px;
+    margin: 45px 0 20px 0;
+}
+.demo-documentWhiteboard-no-flieText {
+    color: #93959d;
+}
+.demo-documentWhiteboard iframe {
+    width: 100%;
+    height: 100%;
+}
+.demo-chat {
+    margin-top: 10px;
+    width: 390px;
+    height: 512px;
+    background-color: aqua;
+}
+.demo-mobile-right {
+    margin-left: 45px;
+}
+#sdk-player-mobile {
+    background-color: antiquewhite;
+}
+#sdk-tool-mobile {
+    background-color: #2081EB;
+}
+#sdk-login-pc {
+    display: block;
+}
+.dialog-mask, .dialog-mask-logout {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    z-index: 2018;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+#before-login-page-pc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    height: 742px;
+    background-color: rgb(36, 36, 53);
+    border-radius: 10px;
+}
+#sdk-documentWhiteboard-pc, #sdk-chat-pc {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+.loading-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading-box {
+    height: 66px;
+    width: 66px;
+}
+.loading-box .circle {
+    stroke-width: 2;
+    stroke: #409eff;
+    stroke-linecap: round;
+}
+
+/* 旋转动画 */
+@keyframes rotate {
+    to {
+        transform: rotate(1turn)
+    }
+}
+/* 弧线动画 */
+/* 125 是圆的周长 */
+@keyframes circle {
+    0% {
+        stroke-dasharray:1,200;
+        stroke-dashoffset:0
+    }
+    50% {
+        stroke-dasharray:90,150;
+        stroke-dashoffset:-40px
+    }
+    100% {
+        stroke-dasharray:90,150;
+        stroke-dashoffset:-120px
+    }
+}
+.loading-box {
+    /* ...同上 */
+    animation: rotate 2s linear infinite;
+}
+.circle {
+    /* ...同上 */
+    animation: circle 2s infinite;
+}
+.page-404 {
+    display: none;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1365px;
+    height: 742px;
+    margin: 20px auto;
+}
+.page-404 p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #909399;
+}
+.logout-pc {
+    display: none !important;
+}
